@@ -9,8 +9,8 @@
 
 public class Main
 {
-  public static void main(String[] args)
-  {
+  public static void main(String[] args) {
+    //example lists
     int[] list1 = {-7, -1, 0, 6, 12};
     int[] list2 = {-44, 1, 3, 6, 9, 12, 44};
     int[] merged = ListMerge.MergeSortedLists(list1, list2);
@@ -42,6 +42,7 @@ public class ListMerge {
       }
       int curr1 = l1[pos1];
       int curr2 = l2[pos2];
+      //add smallest list value to result and increment counter for that list
       if (curr1 < curr2) {
         mergedList[i] = curr1;
         pos1++;
